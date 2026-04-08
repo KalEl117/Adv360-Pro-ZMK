@@ -26,7 +26,7 @@
             bindings = <&kp RIGHT_BRACKET>, <&kp N1>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
     };
 
