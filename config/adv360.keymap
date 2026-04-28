@@ -45,6 +45,20 @@
             bindings = <&kp LC(LA(A))>;
             label = "KEYPASS";
         };
+
+        eSchenker_search: eSchenker_search {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PRCNT &kp PRCNT &kp LEFT>;
+            label = "ESCHENKER_SEARCH";
+        };
+
+        allcaps_copy: allcaps_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(HOME) &kp LS(LC(U)) &kp LC(C)>;
+            label = "ALLCAPS_COPY";
+        };
     };
 
     keymap {
@@ -53,11 +67,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp PLUS                     &kp N1          &kp N2          &kp N3            &kp N4             &kp N5  &tog 2                                                                     &mo 5        &kp N6  &kp N7             &kp N8       &kp N9          &kp N0              &kp MINUS
-&kp TAB                      &kp Q           &kp W           &kp E             &kp R              &kp T   &keypass                                                                   &delword     &kp Y   &kp U              &kp I        &kp O           &kp P               &kp LEFT_BRACKET
-&hm LCTRL ESC                &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D       &hm LEFT_SHIFT F   &kp G   &none            &kp LCTRL    &kp LALT       &kp LGUI         &kp RCTRL    &none        &kp H   &hm RIGHT_SHIFT J  &hm RCTRL K  &hm LEFT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
-&kp LSHFT                    &kp Z           &kp X           &kp C             &kp V              &kp B                                 &kp HOME       &kp PG_UP                                  &kp N   &kp M              &kp COMMA    &kp DOT         &kp MINUS           &kp RSHFT
-&mt LA(LC(LEFT_SHIFT)) CAPS  &kp TILDE       &kp CAPS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &lt 2 BACKSPACE  &lt 3 ENTER  &lt 4 END      &lt 4 PAGE_DOWN  &lt 3 ENTER  &lt 2 SPACE          &kp LEFT_ARROW     &kp DOWN     &kp UP_ARROW    &kp RIGHT           &mt RA(RC(RIGHT_SHIFT)) CAPS
+&kp PLUS                     &kp N1          &kp N2          &kp N3            &kp N4             &kp N5  &tog 2                                                                     &mo 5              &kp N6  &kp N7             &kp N8       &kp N9          &kp N0              &kp MINUS
+&kp TAB                      &kp Q           &kp W           &kp E             &kp R              &kp T   &keypass                                                                   &delword           &kp Y   &kp U              &kp I        &kp O           &kp P               &kp LEFT_BRACKET
+&hm LCTRL ESC                &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D       &hm LEFT_SHIFT F   &kp G   &allcaps_copy    &kp LCTRL    &kp LALT       &kp LGUI         &kp RCTRL    &eSchenker_search  &kp H   &hm RIGHT_SHIFT J  &hm RCTRL K  &hm LEFT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
+&kp LSHFT                    &kp Z           &kp X           &kp C             &kp V              &kp B                                 &kp HOME       &kp PG_UP                                        &kp N   &kp M              &kp COMMA    &kp DOT         &kp MINUS           &kp RSHFT
+&mt LA(LC(LEFT_SHIFT)) CAPS  &kp TILDE       &kp CAPS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &lt 2 BACKSPACE  &lt 3 ENTER  &lt 4 END      &lt 4 PAGE_DOWN  &lt 3 ENTER  &lt 2 SPACE                &kp LEFT_ARROW     &kp DOWN     &kp UP_ARROW    &kp RIGHT           &mt RA(RC(RIGHT_SHIFT)) CAPS
             >;
         };
 
