@@ -67,17 +67,17 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp PLUS                     &kp N1          &kp N2          &kp N3            &kp N4             &kp N5  &tog 2                                                                     &mo 5              &kp N6  &kp N7             &kp N8       &kp N9          &kp N0              &kp MINUS
+&kp PLUS                     &kp N1          &kp N2          &kp N3            &kp N4             &kp N5  &tog 5                                                                     &mo 6              &kp N6  &kp N7             &kp N8       &kp N9          &kp N0              &kp MINUS
 &kp TAB                      &kp Q           &kp W           &kp E             &kp R              &kp T   &keypass                                                                   &delword           &kp Y   &kp U              &kp I        &kp O           &kp P               &kp LEFT_BRACKET
 &hm LCTRL ESC                &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D       &hm LEFT_SHIFT F   &kp G   &allcaps_copy    &kp LCTRL    &kp LALT       &kp LGUI         &kp RCTRL    &eSchenker_search  &kp H   &hm RIGHT_SHIFT J  &hm RCTRL K  &hm LEFT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
 &kp LSHFT                    &kp Z           &kp X           &kp C             &kp V              &kp B                                 &kp HOME       &kp PG_UP                                        &kp N   &kp M              &kp COMMA    &kp DOT         &kp MINUS           &kp RSHFT
-&mt LA(LC(LEFT_SHIFT)) CAPS  &kp TILDE       &kp CAPS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &lt 2 BACKSPACE  &lt 3 ENTER  &lt 4 END      &lt 4 PAGE_DOWN  &lt 3 ENTER  &lt 2 SPACE                &kp LEFT_ARROW     &kp DOWN     &kp UP_ARROW    &kp RIGHT           &mt RA(RC(RIGHT_SHIFT)) CAPS
+&mt LA(LC(LEFT_SHIFT)) CAPS  &caps_word      &kp CAPS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &lt 2 BACKSPACE  &lt 3 ENTER  &lt 4 END      &lt 4 PAGE_DOWN  &lt 3 ENTER  &lt 2 SPACE                &kp LEFT_ARROW     &kp DOWN     &kp UP_ARROW    &kp RIGHT           &mt RA(RC(RIGHT_SHIFT)) CAPS
             >;
         };
 
         qwerty_layer {
             bindings = <
-&kp PLUS   &kp N1     &kp N2    &kp N3            &kp N4             &kp N5  &tog 2                                                       &mo 5      &kp N6  &kp N7          &kp N8     &kp N9        &kp N0     &kp MINUS
+&kp PLUS   &kp N1     &kp N2    &kp N3            &kp N4             &kp N5  &tog 2                                                       &mo 6      &kp N6  &kp N7          &kp N8     &kp N9        &kp N0     &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E             &kp R              &kp T   &keypass                                                     &delword   &kp Y   &kp U           &kp I      &kp O         &kp P      &kp FSLH
 &kp ESC    &kp A      &kp S     &kp D             &kp F              &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI       &kp RCTRL  &none      &kp H   &kp J           &kp K      &kp L         &kp SEMI   &kp APOS
 &kp LSHFT  &kp Z      &kp X     &kp C             &kp V              &kp B                        &kp HOME      &kp PAGE_UP                          &kp N   &kp M           &kp COMMA  &kp DOT       &kp FSLH   &kp RSHFT
@@ -85,21 +85,21 @@
             >;
         };
 
-        keypad {
+        nav_numb {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1       &kp N2                &kp N3        &kp N4      &kp N5         &trans                                                   &mo 5      &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp PAGE_UP  &kp BACKSPACE         &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &none                                                    &none      &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp HOME     &kp LEFT              &kp DOWN      &kp RIGHT   &kp END        &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z        &kp C_AL_MY_COMPUTER  &kp TAB       &kp ENTER   &kp K_CALC                          &kp HOME      &kp PG_UP                        &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 3      &kp GRAVE    &kp CAPS              &kp LEFT      &kp RIGHT                  &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0         &kp UP      &kp DOWN      &kp KP_DOT     &kp TAB          &mo 3
+&kp LA(F4)  &kp N1              &kp N2                &kp N3        &kp N4      &kp N5         &trans                                                   &mo 6   &none                  &kp KP_NUM    &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY    &kp MINUS
+&kp TAB     &kp PAGE_UP         &kp BACKSPACE         &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &none                                                    &none   &kp LS(RIGHT_BRACKET)  &kp N7        &kp N8        &kp N9         &kp LS(N9)         &kp BSLH
+&kp ESC     &kp HOME            &kp LEFT              &kp DOWN      &kp RIGHT   &kp END        &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp LS(N7)             &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp RIGHT_BRACKET  &kp SQT
+&kp LSHFT   &kp LS(LC(ESCAPE))  &kp C_AL_MY_COMPUTER  &kp TAB       &kp ENTER   &kp K_CALC                          &kp HOME      &kp PG_UP                     &kp LS(PERIOD)         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp ENTER          &kp RSHFT
+&mo 3       &kp GRAVE           &kp CAPS              &kp LEFT      &kp RIGHT                  &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp TAB    &kp N0                         &kp UP        &kp DOWN      &kp KP_DOT     &kp SPACE          &mo 3
             >;
         };
 
         fn {
             display-name = "Fn";
             bindings = <
-&kp F11  &kp F1         &kp F2            &kp F3        &kp F4                 &kp F5                 &tog 2                                      &mo 5   &kp F6             &kp F7      &kp F8            &kp F9        &kp F10           &kp F12
+&kp F11  &kp F1         &kp F2            &kp F3        &kp F4                 &kp F5                 &tog 2                                      &mo 6   &kp F6             &kp F7      &kp F8            &kp F9        &kp F10           &kp F12
 &trans   &kp RA(E)      &kp LS(QUESTION)  &kp RA(N8)    &kp RA(N9)             &kp TILDE              &none                                       &none   &kp LS(NUMBER_1)   &kp NUBS    &kp LS(NUBS)      &kp LS(N0)    &kp LS(NUMBER_6)  &trans
 &trans   &kp RA(MINUS)  &kp LS(N7)        &kp RA(N7)    &kp RA(N0)             &kp LS(RIGHT_BRACKET)  &none   &trans  &trans      &trans  &trans  &none   &kp LS(MINUS)      &kp LS(N8)  &kp LS(N9)        &kp SLASH     &kp LS(DOT)       &kp RA(Q)
 &trans   &kp BSLH       &kp LS(NUMBER_4)  &kp RA(NUBS)  &kp RA(RIGHT_BRACKET)  &kp PLUS                               &trans      &trans                  &kp RIGHT_BRACKET  &kp LS(N5)  &kp LS(NUMBER_2)  &kp LS(NUHS)  &kp LS(COMMA)     &trans
@@ -109,11 +109,21 @@
 
         media_mouse {
             bindings = <
-&trans  &trans  &trans             &trans            &trans      &trans  &trans                                         &trans     &trans          &trans          &trans          &trans           &trans           &trans
-&trans  &trans  &trans             &trans            &trans      &trans  &trans                                         &trans     &trans          &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans           &trans
-&trans  &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_MUTE  &trans  &trans  &trans  &trans      &trans  &mkp MCLK  &trans     &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &trans
-&trans  &trans  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT  &trans                  &trans      &trans                        &trans          &mkp MB4        &trans          &mkp MB5         &trans           &trans
-&trans  &trans  &trans             &trans            &trans              &trans  &trans  &trans      &trans  &mkp RCLK  &mkp LCLK                  &trans          &trans          &trans           &trans           &trans
+&trans  &trans  &trans             &trans            &trans           &trans  &trans                                         &trans     &trans          &trans          &trans          &trans           &trans           &trans
+&trans  &trans  &trans             &trans            &trans           &trans  &trans                                         &trans     &trans          &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans           &trans
+&trans  &trans  &kp C_VOLUME_DOWN  &kp K_MUTE        &kp C_VOLUME_UP  &trans  &trans  &trans  &trans      &trans  &mkp MCLK  &trans     &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &trans
+&trans  &trans  &kp C_PREVIOUS     &kp C_PLAY_PAUSE  &kp C_NEXT       &trans                  &trans      &trans                        &trans          &mkp MB4        &trans          &mkp MB5         &trans           &trans
+&trans  &trans  &trans             &trans            &trans                   &trans  &trans  &trans      &trans  &mkp RCLK  &mkp LCLK                  &trans          &trans          &trans           &trans           &trans
+            >;
+        };
+
+        Keypad {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &tog 5                                      &trans           &trans  &kp KP_NUM       &kp KP_EQUAL     &kp KP_SLASH     &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans           &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans           &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                           &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp KP_NUMBER_0          &trans           &trans           &trans           &trans           &trans
             >;
         };
 
