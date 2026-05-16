@@ -56,7 +56,7 @@
         allcaps_copy: allcaps_copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(HOME) &kp LS(LC(U)) &kp LC(C)>;
+            bindings = <&kp LC(V) &kp LS(HOME) &kp LS(LC(U)) &kp LC(C)>;
             label = "ALLCAPS_COPY";
         };
     };
@@ -88,11 +88,11 @@
         nav_numb {
             display-name = "Kp";
             bindings = <
-&kp LA(F4)  &kp N1              &kp N2                &kp N3        &kp N4      &kp N5         &trans                                                   &mo 6   &none                  &kp KP_NUM    &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY    &kp MINUS
-&kp TAB     &kp PAGE_UP         &kp BACKSPACE         &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &none                                                    &none   &kp LS(RIGHT_BRACKET)  &kp N7        &kp N8        &kp N9         &kp RIGHT_BRACKET  &kp BSLH
-&kp ESC     &kp HOME            &kp LEFT              &kp DOWN      &kp RIGHT   &kp END        &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp LS(N7)             &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp KP_COMMA       &kp KP_DOT
+&kp LA(F4)  &kp N1              &kp N2                &kp N3        &kp N4      &kp N5         &trans                                                   &mo 6   &none                  &kp KP_NUM    &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY    &none
+&kp TAB     &kp PAGE_UP         &kp BACKSPACE         &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &none                                                    &none   &kp LS(RIGHT_BRACKET)  &kp N7        &kp N8        &kp N9         &kp RIGHT_BRACKET  &kp SLASH
+&kp ESC     &kp HOME            &kp LEFT              &kp DOWN      &kp RIGHT   &kp END        &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp LS(N7)             &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp COMMA          &kp PERIOD
 &kp LSHFT   &kp LS(LC(ESCAPE))  &kp C_AL_MY_COMPUTER  &kp TAB       &kp ENTER   &kp K_CALC                          &kp HOME      &kp PG_UP                     &kp LS(PERIOD)         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp ENTER          &kp RSHFT
-&mo 3       &kp GRAVE           &kp CAPS              &kp LEFT      &kp RIGHT                  &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp TAB    &kp N0                         &kp UP        &kp DOWN      &kp KP_DOT     &kp SPACE          &mo 3
+&mo 3       &none               &none                 &none         &none                      &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp TAB    &kp N0                         &none         &none         &none          &kp SPACE          &mo 3
             >;
         };
 
